@@ -1,7 +1,7 @@
-import Title from "./components/Title";
-import "./App.css";
-import Gather from "./components/Input";
 import { useState } from "react";
+import Title from "./components/Title";
+import Gather from "./components/Gather";
+import "./App.css";
 
 function App() {
   const [numbers, setNumbers] = useState([]);
