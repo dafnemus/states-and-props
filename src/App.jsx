@@ -2,6 +2,7 @@ import { useState } from "react";
 import Title from "./components/Title";
 import Gather from "./components/Gather";
 import "./App.css";
+import Gallery from "./components/Gallery";
 
 function App() {
   const [numbers, setNumbers] = useState([]);
@@ -25,6 +26,7 @@ function App() {
         onClick={addNumber}
         list={numbers}
       />
+      <Gallery list={numbers} />
     </>
   );
 }
