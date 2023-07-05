@@ -1,0 +1,16 @@
+.gather {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 20px;
+  padding: 30px;
+}
+
+.gather div {
+  display: flex;
+  gap: 20px;
+}
+
+.gather span {
+  font-size: 1.2rem;
+}

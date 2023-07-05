@@ -1,13 +1,21 @@
 import PropTypes from "prop-types";
 import Button from "../Button";
+import "./styles.css";
 
 const Gather = ({ value, onChange, onClick, list }) => {
   return (
-    <div>
-      <input onChange={onChange} placeholder="Procurar" value={value} />
-      <Button onClick={onClick} text="Agregar" />
-      <p>Numbers: </p>
-      <span>{list}</span>
+    <div className="gather">
+      <div>
+        <input
+          onChange={onChange}
+          type="number"
+          placeholder="Procurar"
+          value={value}
+        />
+        <Button onClick={onClick} text="Agregar" />
+      </div>
+      <h2>Numbers: </h2>
+      <span>{list.join(" - ")}</span>
     </div>
   );
 };
@@ -23,6 +31,6 @@ Gather.defaultProps = {
   value: "",
   onChange: () => {},
   onClick: () => {},
-  
+  list: [],
 };
 export default Gather;
